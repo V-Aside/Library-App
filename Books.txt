@@ -1,0 +1,4 @@
+Kürk Mantolu Madonna, Sabahattin Ali, 1920, 300, None, 1
+Utopia, Thomas More, 1964, 458, None, 2
+Metro 2033, Dimitri, 2017, 435, Bilim Kurgu, 3
+Metro 2034, Dimitri, 2017, 447, Bilim Kurgu, 4
