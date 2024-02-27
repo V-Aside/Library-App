@@ -19,7 +19,7 @@ class Library:
                 #Satır içeriğini virgüle göre ayırır.
                 icerik = satir.split(",")
                 #İçeriğin başı ve sonundaki boşluk karakterlerini siler ve ekrana yazdırır.
-                print(f"Kitap Adı: {icerik[0].strip()}\nYazar Adı: {icerik[1].strip()}\n")
+                print(f"Kitap Adı: {icerik[0].strip()}\nYazar Adı: {icerik[1].strip()}\nYayın Tarihi: {icerik[2].strip()}\nSayfa Sayısı: {icerik[3].strip()}\n")
         else:
             print("Kitaplıkta Kayıtlı Kitap Bulunmamakta.")
 
@@ -266,8 +266,8 @@ while True: # Arayüz
 
         elif secim == 3: # Kitap Ekle
             while True: # Kullanıcıdan kitap adı ister ve eğer kitap adı boş geçilmişse kullanıcı geçerli bir kitap adı girene kadar kullanıcıya sorar.
-                barkod = input("Barkod Kodunu Giriniz (HER KOD KİTABA ÖZGÜDÜR): ")
-                if barkod.strip() != "": # Geçerli bir kitap adı girildikten sonra opsiyonel bilgiler istenir.
+                barkod = input("Barkod Kodunu Giriniz (HER KOD KİTABA ÖZGÜDÜR): ").strip().lower()
+                if barkod != "": # Geçerli bir kitap adı girildikten sonra opsiyonel bilgiler istenir.
                     break
                 else:
                     print(50*"-")
@@ -278,8 +278,8 @@ while True: # Arayüz
 
         elif secim == 4:
             while True: # Kullanıcıdan kitap adı ister ve eğer kitap adı boş geçilmişse kullanıcı geçerli bir kitap adı girene kadar kullanıcıya sorar.
-                barkod = input("Güncellemek İstediğiniz Kitabın Barkod Kodunu Giriniz: ")
-                if barkod.strip() != "": # Geçerli bir kitap adı girildikten sonra opsiyonel bilgiler istenir.
+                barkod = input("Güncellemek İstediğiniz Kitabın Barkod Kodunu Giriniz: ").strip().lower()
+                if barkod != "": # Geçerli bir kitap adı girildikten sonra opsiyonel bilgiler istenir.
                     break
                 else:
                     print(50*"-")
